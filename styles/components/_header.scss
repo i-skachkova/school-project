@@ -1,0 +1,82 @@
+.header{
+    max-height: 150px;
+    
+    &__container{
+        display: flex;
+        align-items: center;
+    }
+    &__logo-img{
+        width: 100px;
+        height: 100px;
+        margin-right: 100px;
+    }
+    &__nav-link::after{
+        content: '';
+        background-color: $main-color;
+        height: 4px;
+        display: block;
+        border-radius: 2px;
+        width: calc(100% + 4px);
+        position: absolute;
+        bottom: -40px;
+        left: -2px;
+        opacity: 0;
+        transform: scaleX(0);
+    
+        transition: transform, opacity;
+        @extend %transition;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+    }
+    &__nav-link:hover::after, &__nav-link:focus::after{
+        transform: scaleX(1);
+        opacity: 1;
+    }
+    &__nav-list{
+        display: flex;
+        align-content: center;
+        gap: 30px;
+        margin-right: auto;
+    }
+    &__nav-link{
+        color: $text-color1;
+        font-weight: 450;
+        @extend %transition;
+    }
+    &__nav-link:hover, &__nav-link:focus{
+        color: $main-color;
+        position: relative;
+    }
+    &__contacts-list{
+        display: flex;
+        gap: 10px;
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: $text-color2;
+        font-weight: 400;
+        @extend %transition;
+    }
+    &__link:hover{
+        color: $main-color;
+    }
+    &__link:hover &__icon{
+        fill: $main-color;
+    }
+    &__icon{
+        max-width: 16px;
+        height: 15px;
+        fill: $text-color2;
+        @extend %transition;
+    }
+}
+.active-page{
+    color: $main-color;
+    position: relative;
+}
+.active-page::after{
+    opacity: 1;
+    transform: scaleX(1);
+}

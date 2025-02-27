@@ -1,0 +1,13 @@
+%text-size{
+    font-size: 14px;
+    line-height: 24px;
+}
+%transition{
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+%flex-base{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

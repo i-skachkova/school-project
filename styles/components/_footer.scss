@@ -1,0 +1,202 @@
+.footer{
+    background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: start;
+            justify-content: center;
+        }
+        @media screen and (min-width: 1200px) {
+            align-items: center;
+        }
+    }
+    &__logo-img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        @media screen and (min-width: 1200px) {
+            margin-left: 0;
+        }
+    }
+    &__info-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: 1200px) {
+            align-items: start;
+        }
+    }
+    &__address{
+        @extend %text-size;
+        color: #FFF;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.42px;
+        margin-top: 20px;
+    }
+    &__nav-item{
+        margin-top: 8px;
+    }
+    &__link{
+        font-weight: 400;
+        @extend %text-size;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    &__link:hover, &__link:focus{
+        color: $main-color;
+        @extend %transition;
+    }
+    &__box{
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: 768px) {
+            width: 768px;
+            flex-direction: row;
+            justify-content: center;
+            gap: 165px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: auto;
+            align-items: center;
+            gap: 0;
+        }
+    }
+    &__sn{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: 768px) {
+            margin-top: 0;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-right: 93px;
+            margin-left: 70px;
+            align-items: start;
+        }
+    }
+    &__sn-title{
+        color: #FFF;
+        @extend %text-size;
+        font-weight: 700;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+    }
+    &__sn-list{
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    &__sn-item, &__sn-link:focus{
+        border-radius: 100%;
+        width: 44px;
+        height: 44px;
+        background: rgba(255, 255, 255, 0.10);
+
+        @extend %transition;
+        transition-property: background;
+    }
+    &__sn-link{
+        @extend %flex-base;
+        border-radius: 100%;
+        width: 44px;
+        height: 44px;
+    }
+    &__sn-item:hover, &__sn-link:focus{
+        background: $main-color;
+        outline: none;
+    }
+    &__socials{
+        width: 20px;
+        height: 20px;
+        fill: #FFF;
+        color: #fff;
+    }
+    &__subscribe{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: 1200px) {
+            align-items: start;
+            margin-top: 0;
+        }
+    }
+    &__form-title{
+        color: #FFF;
+        font-family: $Roboto;
+        @extend %text-size;
+        font-weight: 700;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            gap: 12px;
+        }
+    }
+    &__email{
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.30);
+        background: rgba(33, 150, 243, 0.00);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        padding-left: 15px;
+        height: 50px;
+        width: 290px;
+        color: #FFF;
+
+        @media screen and (min-width:480px) {
+            width: 450px;
+        }
+        @media screen and (min-width:1200px) {
+            width: 295px;
+        }
+    }
+    &__form-button{
+        border: none;
+        border-radius: 4px;
+        background: $main-color;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        width: 200px;
+        height: 50px;
+        @extend %flex-base;
+        gap: 10px;
+        color: #FFF;
+        font-family: $Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.87; 
+        letter-spacing: 0.96px;
+        margin-top: 20px;
+
+        @extend %transition;
+        transition-property: background;
+        @media screen and (min-width: 1200px) {
+            margin-top: 0;
+        }
+    }
+    &__form-button:hover{
+        background: $button-color;
+    }
+    &__button-svg{
+        max-width: 24px;
+        max-height: 24px;
+        fill: #FFF;
+    }
+}
