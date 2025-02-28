@@ -348,6 +348,39 @@ button {
   transform: scaleX(1);
 }
 
+.info {
+  padding-top: 90px;
+  padding-bottom: 150px;
+  background-color: #97d9a3;
+  background-image: url("../../images/bg-img.png");
+  background-size: 100px;
+}
+.info__container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+.info__title {
+  color: #212121;
+  font-size: 30px;
+}
+.info__box {
+  display: flex;
+  gap: 100px;
+  background-color: #22ae3c;
+  padding: 25px;
+  border-radius: 20px;
+}
+.info__text {
+  max-width: 500px;
+  color: #212121;
+  font-size: 20px;
+}
+.info__img {
+  width: 350px;
+}
+
 .about {
   padding-top: 100px;
   padding-bottom: 100px;
