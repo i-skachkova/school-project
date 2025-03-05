@@ -381,6 +381,94 @@ button {
   width: 350px;
 }
 
+.infol {
+  padding-top: 90px;
+  padding-bottom: 150px;
+  background-color: #97d9a3;
+  background-image: url("../../images/lily-img2.png"), url("../../images/lily-img1.png");
+  background-repeat: no-repeat;
+  background-size: 500px, 400px;
+  background-position: 0% 100%, 90% 100%;
+}
+.infol__container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+.infol__title {
+  color: #212121;
+  font-size: 30px;
+}
+.infol__box {
+  display: flex;
+  gap: 100px;
+  background-color: #22ae3c;
+  padding: 25px;
+  border-radius: 20px;
+}
+.infol__text {
+  max-width: 500px;
+  color: #212121;
+  font-size: 20px;
+}
+.infol__img {
+  width: 350px;
+}
+
+.infom {
+  padding-top: 90px;
+  padding-bottom: 150px;
+  background-color: #97d9a3;
+  background-image: url("../../images/mallows-img2.png"), url("../../images/mallows-img4.png");
+  background-repeat: no-repeat;
+  background-size: 400px, 400px;
+  background-position: 10% 100%, 85% 100%;
+}
+.infom__container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+.infom__title {
+  color: #212121;
+  font-size: 30px;
+}
+.infom__box {
+  display: flex;
+  gap: 100px;
+  background-color: #22ae3c;
+  padding: 25px;
+  border-radius: 20px;
+}
+.infom__text {
+  max-width: 500px;
+  color: #212121;
+  font-size: 20px;
+}
+.infom__img {
+  width: 350px;
+}
+
+.hero {
+  background-color: rgba(53, 111, 11, 0.4);
+  background-image: url("../../images/hero-bg.avif");
+  background-repeat: no-repeat;
+  padding-top: 250px;
+  padding-bottom: 350px;
+  background-size: cover;
+}
+.hero__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__title {
+  font-size: 35px;
+  color: #212121;
+}
+
 .about {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -407,22 +495,4 @@ button {
   margin-left: auto;
   margin-right: auto;
   max-width: 600px;
-}
-
-.hero {
-  background-color: rgba(53, 111, 11, 0.4);
-  background-image: url("../../images/hero-bg.avif");
-  background-repeat: no-repeat;
-  padding-top: 250px;
-  padding-bottom: 350px;
-  background-size: cover;
-}
-.hero__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hero__title {
-  font-size: 35px;
-  color: #212121;
 }/*# sourceMappingURL=main.css.map */
